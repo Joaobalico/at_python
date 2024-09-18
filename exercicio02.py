@@ -17,18 +17,33 @@ No moodle, é possível ver a fórmula para cálculo do desvio padrão.
 Veja um exemplo em: https://pt.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/variance-standard-deviation-sample/a/population-and-sample-standard-deviation-review
 """
 
-
+# criando uma lista para armazenar os valores
 lista_de_numeros = []
 
+# pedindo entrada do usuario até que ele digite "q"
 while True:
     numero = input("Digite um número (q para sair): ")
     lista_de_numeros.append(numero)
     if numero == "q":
-        for num in lista_de_numeros:
+        # fazendo a soma
+        soma = 0
+        for num in lista_de_numeros[:-1]:
+          print(num)
+          soma += int(num)
 
-        soma = 
-        print(f"A soma dos números informados é: {lista_de_numeros[:-1]}")
-        print(f"A média dos números informados é: {lista_de_numeros[:-1]}")
-        print(f"O desvio-padrão dos números informados é: {lista_de_numeros[:-1]}")
-        print(lista_de_numeros)
+        # Cálculo da média
+        media = soma / len(lista_de_numeros[:-1])
+
+        # Cálculo do desvio padrão
+        soma_quadrados_diferencas = 0
+        for num in lista_de_numeros[:-1]:
+            diferenca = int(num) - media
+            soma_quadrados_diferencas += diferenca ** 2
+  
+        desvio_padrao = (soma_quadrados_diferencas / len(lista_de_numeros[:-1])) ** 0.5
+
+        # imprimindo o resultado na tela
+        print(f"A soma dos números informados é: {soma}")
+        print(f"A média dos números informados é: {media}")
+        print(f"O desvio-padrão dos números informados é: {desvio_padrao}")
         break
