@@ -15,6 +15,20 @@ O desvio-padrão dos números informados é: 6.5574
 
 No moodle, é possível ver a fórmula para cálculo do desvio padrão.
 Veja um exemplo em: https://pt.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/variance-standard-deviation-sample/a/population-and-sample-standard-deviation-review
-
-
 """
+
+
+lista_de_numeros = []
+
+while True:
+    numero = input("Digite um número (q para sair): ")
+    lista_de_numeros.append(numero)
+    if numero == "q":
+        for num in lista_de_numeros:
+
+        soma = 
+        print(f"A soma dos números informados é: {lista_de_numeros[:-1]}")
+        print(f"A média dos números informados é: {lista_de_numeros[:-1]}")
+        print(f"O desvio-padrão dos números informados é: {lista_de_numeros[:-1]}")
+        print(lista_de_numeros)
+        break
