@@ -7,7 +7,6 @@ Exemplo de execução:
 Entre com os números separados por espaço: 1 2 3 4 5 6
 Números pares: [2, 4, 6]
 """
-
 numeros = "1 2 3 4 5 6"
 
 lista_pares = []
@@ -18,3 +17,5 @@ for num in numeros:
     lista_pares.append(num)
 
 print(lista_pares)
+
+#TODO

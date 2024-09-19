@@ -13,3 +13,12 @@ import random
 
 lista0 = random.sample(range(1, 100), 10)
 lista1 = random.sample(range(1, 100), 10)
+
+lista_resultante = []
+for i in range(len(lista0)):
+  soma = lista0[i] + lista1[i]
+  lista_resultante.append(soma)
+
+print(lista_resultante)
+
+#done

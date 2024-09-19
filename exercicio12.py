@@ -57,3 +57,12 @@ saco_de_skittles = [
     "marrom",
     "vermelho",
 ]
+
+# 7 Skittles
+# 13 segs
+
+numero_skittles_vermelho = saco_de_skittles.count("vermelho")
+
+
+tempo_para_comer= None
+print(numero_skittles_vermelho)

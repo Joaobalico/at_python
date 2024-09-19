@@ -15,3 +15,15 @@
     Usuário faz o palpite: 42
     Saída: "Parabéns! Você adivinhou o número!"
 """
+
+import random
+numero_pc = random.randint(1, 100)
+
+numero_usuario = int(input("Digite um número: "))
+
+if numero_usuario == numero_pc:
+    print("Parabéns! Você adivinhou o número!")
+elif numero_usuario < numero_pc:
+    print("Seu palpite é menor que o número escolhido.")
+else:
+    print("Seu palpite é maior que o número escolhido.")

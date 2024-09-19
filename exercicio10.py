@@ -16,3 +16,14 @@ A tabuada de 5 é:
 5 x 9 = 45
 5 x 10 = 50
 """
+
+numero = int(input("Digite um número: "))
+
+tabuada= []
+
+for i in range(1,11):
+  tabuada.append(numero* i)
+
+print(f"A tabuada de {numero} é:")
+for i in tabuada:
+  print(i)

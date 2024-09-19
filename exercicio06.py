@@ -18,3 +18,11 @@ A sua tarefa agora é escrever o código para ENCRIPTAR a mensagem. A mensagem a
 """
 
 mensagem_original = "Olá Alice! Resolvi mudar nossa criptografia, acredito que nossa última mensagem foi interceptada. Mas agora com esse novo método ninguém vai conseguir ler nossas mensagens."
+
+lista_pares= []
+lista_impares= []
+lista_final=[]
+for i in mensagem_original:
+
+   
+#todo
