@@ -14,8 +14,8 @@ for a, b in zip(lista0, lista1):
   if a == b:
     comum.append(a)
 
+  lista_intersecao = comum
 
-#comum.append(1 for a, b in zip(lista0, lista1) if a == b)
 
-print(comum)
-#todo
+print(lista_intersecao)
+#done

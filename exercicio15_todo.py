@@ -18,3 +18,14 @@ O algoritmo de validação do CPF é baseado em cálculos matemáticos que envol
 
 Veja um exemplo em: https://dicasdeprogramacao.com.br/algoritmo-para-validar-cpf/
 """
+cpf = "529.982.247-25"
+
+for i in cpf:
+  if i.isnumeric():
+    pass
+  elif i == ".":
+    if i in (cpf[3])
+  elif i == "-":
+    pass
+  else:
+    print("CPF INVÁLIDO.")

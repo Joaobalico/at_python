@@ -60,11 +60,18 @@ saco_de_skittles = [
 
 # 7 Skittles
 # 13 segs
+# 16 segs vermelho
 
-numero_skittles_vermelho = saco_de_skittles.count("vermelho")
+count=0
+for i in saco_de_skittles:
+    if i != "vermelho":
+      count+= 1
 
+segundos_skittles_vermelho = saco_de_skittles.count("vermelho") * 16
+segundos_outras_cores= count * 13
+total = (segundos_outras_cores + segundos_skittles_vermelho) / 60
 
-tempo_para_comer= None
-print(numero_skittles_vermelho)
+minutos = round(total, 2)
+print(f"{int(minutos)} minutos e {str(minutos).split('.')[1]} segundos")
 
-#todo
+#done

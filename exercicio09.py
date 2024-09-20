@@ -15,27 +15,30 @@ O gabarito do exercício é dado na variável gabarito.
 Escreva um código que diga quanto cada questão cada um dos garotos acertou. Seu código deve conter comentários.
 """
 
-# gabarito = "BBCBCBBCAACABBACCCBCBCABBACBCACBCCBACACCCCABBCCCCABACAABBCAACACBABBACACBBBCABBABCAABCCCBABAAAAABBCBBCABABAAABCCCCACBBBCAABCBCBABCBCBABAACBCCCACAAABCCCCCABBAABACAACCABCBABACBBACCCCCAACBBBCBAACACCACAAAC"
-
-gabarito = "BBCBCBBC"
+gabarito = "BBCBCBBCAACABBACCCBCBCABBACBCACBCCBACACCCCABBCCCCABACAABBCAACACBABBACACBBBCABBABCAABCCCBABAAAAABBCBBCABABAAABCCCCACBBBCAABCBCBABCBCBABAACBCCCACAAABCCCCCABBAABACAACCABCBABACBBACCCCCAACBBBCBAACACCACAAAC"
 
 adrian = "ABC"
 bruno = "BABC"
 goran = "CCAABB"
 
+adrian_sequence = adrian * (len(gabarito) // len(adrian) +1)
+bruno_sequence = bruno * (len(gabarito) // len(bruno) +1)
+goran_sequence = goran * (len(gabarito) // len(goran) +1)
 
 count_adrian= 0
 count_bruno= 0
 count_goran= 0
 
 for i in range(len(gabarito)):
-  if adrian[i] == gabarito[i]:
+  if adrian_sequence[i] == gabarito[i]:
     count_adrian += 1
-  if bruno[i] == gabarito[i]:
+  if bruno_sequence[i] == gabarito[i]:
     count_bruno += 1
-  if goran[i] == gabarito[i]:
+  if goran_sequence[i] == gabarito[i]:
     count_goran += 1
 
-print(count_adrian)
+print(f"Adrian acertou: {count_adrian}")
+print(f"Bruno acertou: {count_bruno}")
+print(f"Goran acertou: {count_goran}")
 
-#todo
+#done
