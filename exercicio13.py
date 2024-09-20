@@ -8,3 +8,14 @@ lista1 = ["b", "o", 7, 3, 2, "x", "d", 6, "w", "n"]
 
 
 lista_intersecao = None
+
+comum = []
+for a, b in zip(lista0, lista1):
+  if a == b:
+    comum.append(a)
+
+
+#comum.append(1 for a, b in zip(lista0, lista1) if a == b)
+
+print(comum)
+#todo

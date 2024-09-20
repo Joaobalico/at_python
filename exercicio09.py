@@ -15,4 +15,27 @@ O gabarito do exercício é dado na variável gabarito.
 Escreva um código que diga quanto cada questão cada um dos garotos acertou. Seu código deve conter comentários.
 """
 
-gabarito = "BBCBCBBCAACABBACCCBCBCABBACBCACBCCBACACCCCABBCCCCABACAABBCAACACBABBACACBBBCABBABCAABCCCBABAAAAABBCBBCABABAAABCCCCACBBBCAABCBCBABCBCBABAACBCCCACAAABCCCCCABBAABACAACCABCBABACBBACCCCCAACBBBCBAACACCACAAAC"
+# gabarito = "BBCBCBBCAACABBACCCBCBCABBACBCACBCCBACACCCCABBCCCCABACAABBCAACACBABBACACBBBCABBABCAABCCCBABAAAAABBCBBCABABAAABCCCCACBBBCAABCBCBABCBCBABAACBCCCACAAABCCCCCABBAABACAACCABCBABACBBACCCCCAACBBBCBAACACCACAAAC"
+
+gabarito = "BBCBCBBC"
+
+adrian = "ABC"
+bruno = "BABC"
+goran = "CCAABB"
+
+
+count_adrian= 0
+count_bruno= 0
+count_goran= 0
+
+for i in range(len(gabarito)):
+  if adrian[i] == gabarito[i]:
+    count_adrian += 1
+  if bruno[i] == gabarito[i]:
+    count_bruno += 1
+  if goran[i] == gabarito[i]:
+    count_goran += 1
+
+print(count_adrian)
+
+#todo

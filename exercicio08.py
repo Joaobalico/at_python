@@ -8,11 +8,14 @@ Digite um número: 5
 O fatorial de 5 é 120
 """
 
+# pedindo entrada do usuario
 numero = int(input("Digite um numero: "))
 
-numero_final = 1
+# multiplicando os valores por cada iteraçao
 for i in range(1, numero):
-  numero_final = numero * i
-  print(numero_final)
-  
-print(numero_final)
+  numero *= i
+
+# imprimindo na tela o resultado pedindo entrada do usuario
+print(numero)
+
+#done

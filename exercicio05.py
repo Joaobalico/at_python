@@ -12,12 +12,15 @@ Saída esperada:
 2.083333333333333
 """
 
+# pedindo entrada do usuario
 number = int(input("Digite um número: "))
 
+# declarando a variavel soma e fazendo um loop para somar a cada iteração
 soma = 0
-for i in range(2, number):
-  soma += 1 + 1/i
+for i in range(1, number + 1):
+  soma += 1/i
 
+# imprimindo na tela a soma
 print(soma)
 
-#todo
+#done

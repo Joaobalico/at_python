@@ -27,3 +27,5 @@ elif numero_usuario < numero_pc:
     print("Seu palpite é menor que o número escolhido.")
 else:
     print("Seu palpite é maior que o número escolhido.")
+
+#done
