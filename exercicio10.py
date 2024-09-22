@@ -28,5 +28,3 @@ print(f"A tabuada de {numero} é:")
 for i in range(1,11):
   tabuada.append(numero* i)
   print(f"{numero} x {i} = {tabuada[i-1]}")
-
-#done

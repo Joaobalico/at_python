@@ -22,5 +22,3 @@ elif number == 1:
     print(number, 'é um')
 else:
     print(number, 'é negativo')
-
-#done

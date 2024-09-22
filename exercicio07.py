@@ -20,5 +20,3 @@ total_lca = (num * lca) * 12 * 10
 # calculando diferença e imprimindo na tela
 diferenca = total_lca - total_poupanca
 print(diferenca)
-
-#done

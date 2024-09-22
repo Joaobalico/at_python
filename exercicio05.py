@@ -22,5 +22,3 @@ for i in range(1, number + 1):
 
 # imprimindo na tela a soma
 print(soma)
-
-#done

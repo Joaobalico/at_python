@@ -34,5 +34,3 @@ for i in range(middle):
 
 # imprimindo na tela o resultado
 print(combined_list)
-
-#done

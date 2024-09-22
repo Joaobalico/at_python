@@ -17,5 +17,3 @@ for i in range(1, numero):
 
 # imprimindo na tela o resultado pedindo entrada do usuario
 print(numero)
-
-#done

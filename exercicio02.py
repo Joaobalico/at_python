@@ -47,5 +47,3 @@ while True:
         print(f"A média dos números informados é: {media}")
         print(f"O desvio-padrão dos números informados é: {desvio_padrao}")
         break
-
-#done

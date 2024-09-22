@@ -16,16 +16,17 @@
     Saída: "Parabéns! Você adivinhou o número!"
 """
 
+# importando biblioteca para criar numeros aleatorios e guardando um numero numa variavel
 import random
 numero_pc = random.randint(1, 100)
 
+# pedindo entrada do usuario
 numero_usuario = int(input("Digite um número: "))
 
+# verificando se o usuario acertou o numero e imprimindo o resultado na tela
 if numero_usuario == numero_pc:
     print("Parabéns! Você adivinhou o número!")
 elif numero_usuario < numero_pc:
     print("Seu palpite é menor que o número escolhido.")
 else:
     print("Seu palpite é maior que o número escolhido.")
-
-#done

@@ -31,5 +31,3 @@ for num in string_entrada_usuario:
     lista_pares.append(num)
 
 print(lista_pares)
-
-#done

@@ -24,5 +24,3 @@ for i in range(len(lista0)):
 
 # Imprimindo na tela o resultado 
 print(lista_resultante)
-
-#done

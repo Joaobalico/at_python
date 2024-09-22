@@ -20,5 +20,3 @@ while count <= num:
 
 # Imprimindo na tela o total
 print(total)
-
-#done
