@@ -68,5 +68,3 @@ if "." and "-" in cpf:
         print("CPF Inválido")
 else:    
     print("CPF Inválido")
-
-#done
