@@ -18,3 +18,19 @@ A sua tarefa agora é escrever o código para ENCRIPTAR a mensagem. A mensagem a
 """
 
 mensagem_original = "Olá Alice! Resolvi mudar nossa criptografia, acredito que nossa última mensagem foi interceptada. Mas agora com esse novo método ninguém vai conseguir ler nossas mensagens."
+
+# guardando o tamanho da string
+len = len(mensagem_original)
+
+# separando no meio
+middle = len // 2
+first, second = mensagem_original[:middle], mensagem_original[middle:]
+
+# fazendo um loop para combinar as duas partes numa só lista
+combined_list = []
+for i in range(middle):
+   combined_list.append(first[i])
+   combined_list.append(second[i])
+
+# imprimindo na tela o resultado
+print(combined_list)

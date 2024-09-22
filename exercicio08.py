@@ -7,3 +7,13 @@ Exemplo de execução:
 Digite um número: 5
 O fatorial de 5 é 120
 """
+
+# pedindo entrada do usuario
+numero = int(input("Digite um numero: "))
+
+# multiplicando os valores por cada iteraçao
+for i in range(1, numero):
+  numero *= i
+
+# imprimindo na tela o resultado pedindo entrada do usuario
+print(numero)

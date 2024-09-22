@@ -16,3 +16,15 @@ A tabuada de 5 é:
 5 x 9 = 45
 5 x 10 = 50
 """
+
+# entrada do usuario
+numero = int(input("Digite um número: "))
+
+# declarando variavel para guardar os valores
+tabuada= []
+
+# iterando pelo intervalo do numero e multiplicando os valores
+print(f"A tabuada de {numero} é:")
+for i in range(1,11):
+  tabuada.append(numero* i)
+  print(f"{numero} x {i} = {tabuada[i-1]}")

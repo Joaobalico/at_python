@@ -16,3 +16,32 @@ Escreva um código que diga quanto cada questão cada um dos garotos acertou. Se
 """
 
 gabarito = "BBCBCBBCAACABBACCCBCBCABBACBCACBCCBACACCCCABBCCCCABACAABBCAACACBABBACACBBBCABBABCAABCCCBABAAAAABBCBBCABABAAABCCCCACBBBCAABCBCBABCBCBABAACBCCCACAAABCCCCCABBAABACAACCABCBABACBBACCCCCAACBBBCBAACACCACAAAC"
+
+# guardando sequencia de respostas em variaveis
+adrian = "ABC"
+bruno = "BABC"
+goran = "CCAABB"
+
+# multiplicando a sequencia para que tenha o tamanho da string gabarito
+adrian_sequence = adrian * (len(gabarito) // len(adrian) +1)
+bruno_sequence = bruno * (len(gabarito) // len(bruno) +1)
+goran_sequence = goran * (len(gabarito) // len(goran) +1)
+
+# inicializando variaveis que vao ser somadas
+count_adrian= 0
+count_bruno= 0
+count_goran= 0
+
+# iterando por cada caractere e verificando as respostas de cada um
+for i in range(len(gabarito)):
+  if adrian_sequence[i] == gabarito[i]:
+    count_adrian += 1
+  if bruno_sequence[i] == gabarito[i]:
+    count_bruno += 1
+  if goran_sequence[i] == gabarito[i]:
+    count_goran += 1
+
+# imprimindo na tela os resultados
+print(f"Adrian acertou: {count_adrian}")
+print(f"Bruno acertou: {count_bruno}")
+print(f"Goran acertou: {count_goran}")

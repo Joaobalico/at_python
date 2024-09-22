@@ -57,3 +57,20 @@ saco_de_skittles = [
     "marrom",
     "vermelho",
 ]
+
+# inicializando variavel count que vai ser somada
+count=0
+
+# iterando pelos items da lista para verificar quais sao os vermelhos e somando ao "count"
+for i in saco_de_skittles:
+    if i != "vermelho":
+      count+= 1
+
+# multiplicando cada item pelos respetivos segundos e somando o total de segundos
+segundos_skittles_vermelho = saco_de_skittles.count("vermelho") * 16
+segundos_outras_cores= count * 13
+total = (segundos_outras_cores + segundos_skittles_vermelho) / 60
+
+# transformando os segundos em minutos e imprimindo na tela o resultado final
+minutos = round(total, 2)
+print(f"{int(minutos)} minutos e {str(minutos).split('.')[1]} segundos")

@@ -18,3 +18,53 @@ O algoritmo de validação do CPF é baseado em cálculos matemáticos que envol
 
 Veja um exemplo em: https://dicasdeprogramacao.com.br/algoritmo-para-validar-cpf/
 """
+# cpf = "529.982.247-25"
+# cpf = "123.456.789-12" # invalido
+# cpf = "777.777.777-77" # invalido
+
+# Pedindo input do usuario
+cpf = input("Insira um CPF: ")
+
+# Verificando se o CPF é válido
+if "." and "-" in cpf:
+    # Removendo pontos e traços
+    cpf = cpf.replace(".", "")
+    cpf = cpf.replace("-", "")
+    if cpf.isdigit() and len(cpf) == 11:
+      primeiros_nove = cpf[:9]
+
+      # Verifica se todos os dígitos são iguais
+      if len(set(cpf)) == 1:
+        print("CPF Inválido")
+        exit()
+        
+      # primeira verificacao
+      soma = 0
+      lista_1_verificacao= [10, 9, 8, 7, 6, 5, 4, 3, 2]
+      for i in range(len(primeiros_nove)):
+        soma += (int(primeiros_nove[i]) * lista_1_verificacao[i])
+
+      primeiro_digito = (soma * 10) % 11
+      if primeiro_digito == 1:
+        primeiro_digito = 0
+      elif primeiro_digito > 9:
+        print("CPF Inválido")
+        exit()
+
+      # segunda verificacao
+      soma2 = 0
+      lista_2_verificacao= [11, 10, 9, 8, 7, 6, 5, 4, 3, 2]
+      primeiros_dez = primeiros_nove + str(primeiro_digito)
+      for i in range(len(primeiros_dez)):
+        soma2 += (int(primeiros_dez[i]) * lista_2_verificacao[i])
+      segundo_digito = (soma2 * 10) % 11
+
+      # checando se os digitos verificadores sao iguais
+      if primeiro_digito == int(cpf[-2]) and segundo_digito == int(cpf[-1]):
+        print("CPF Válido")
+      else:
+        print("CPF Inválido")
+    else:    
+        print("CPF Inválido")
+else:    
+    print("CPF Inválido")
